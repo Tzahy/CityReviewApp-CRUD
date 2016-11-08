@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reviews App</title>
+	<link rel="stylesheet" href="css/add.css">
+</head>
+<body>
+	<div class="main">
+		<h1 class="main_title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a Review&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+		
+		<div class="review-form">
+			<div class="form-item-box">
+                <span class="form-label">Review Title</span>
+				<input class="form-input text-input titleField" 
+				onFocus="this.className='form-input text-input titleField'"
+				type="text" placeholder="Give it a Title..."/>
+			</div> 
+       		<div class="form-item-box">
+				<span class="form-label">City</span>
+				<input class="form-input text-input cityField" 
+				onFocus="this.className='form-input text-input cityField'"
+				type="text" placeholder="Where is the place?"/>
+			</div>     
+        	<div class="form-item-box">
+				<span class="form-label">Image URL</span>
+				<input class="form-input text-input imgField" 
+				onFocus="this.className='form-input text-input imgField'"
+				type="text" placeholder="Type a full URL..."/>
+			</div>
+			<div class="description-box">
+				<span class="form-label">Description</span>
+
+		<textarea class="form-input text-input descriptionField"
+		onFocus="this.className='form-input text-input descriptionField'"
+		placeholder="Give us your short description..." rows="4" cols="50"></textarea>
+			</div>
+			<button class="submit">Submit</button>   	
+		</div>	
+
+	</div>
+<script src="js/add.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg5_Xh191cjyHkMUo7xVl7F6K3mHdqZN4&callback=initAutoComplete&libraries=places" type="text/javascript"></script>
+</body>
+</html>

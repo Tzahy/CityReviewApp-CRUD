@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import './reset.css';
+
+body,html,span{
+    font-family: 'Shadows Into Light', cursive;
+}
+    
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    border-width: 0 0 5px;
+    border-style: solid;
+    border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill stretch;
+    font-size: 50px;
+}
+
+.main {
+    border: 5px solid black;
+    color: #4238b9;
+    background-image: url("../images/city-pictures-1.jpg");
+	min-height: 100vh;
+	display: flex;
+    flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.main_title {
+	font-size: 4rem;
+	margin: 2rem;
+    align-self: center;
+}
+
+.text-input{
+	flex:1;
+	max-width: 22rem;
+	padding: 15px 15px;
+	border-radius: 8px;
+	background: rgba(244, 244, 244, 0.51);
+    border: 1px solid #adadad;
+	font-size: 16px;
+	color:#2a2a2a;
+	transition: all .25s ease-in-out;
+	transition-property:outline,border-color,box-shadow;
+}
+
+.text-input:focus {
+	outline:none;
+	border-color:#9ecaed;
+	box-shadow:0 0 10px #9ecaed;
+}
+
+.review-form{
+    background: #e7f3fc;
+    border-radius: 10px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+    align-self: center;
+}
+
+.review-form2{
+    background: #e7f3fc;
+    border-radius: 10px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+    align-self: center;
+}
+
+.form-item-box{
+	display: flex;
+    align-items: center;
+	padding-bottom: 15px;
+}
+
+.form-label{
+	font-size: 26px;
+	flex:1;
+}
+.form-input{
+    flex-basis: 150px;
+}
+
+.description-box{
+	display: flex;
+	padding-bottom: 15px;
+}
+
+.submit{
+	align-self: flex-end;
+	border-radius: 5px;
+	background: #00a2ff;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	padding: 10px 25px;
+	box-shadow: 0px 2px 0px   #236983;
+	cursor: pointer;
+    transition: all .25s ease-in-out;
+	transition-property: background-color, box-shadow;
+}
+
+.submit:hover{
+	background-color: #00d6bd;
+	box-shadow: 0px 8px 15px rgba(16, 16, 16, 0.63);
+}
+
+.update{
+	align-self: flex-end;
+	border-radius: 5px;
+	background: #00a2ff;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	padding: 10px 25px;
+	box-shadow: 0px 2px 0px   #236983;
+	cursor: pointer;
+    transition: all .25s ease-in-out;
+	transition-property: background-color, box-shadow;
+}
+
+.update:hover{
+	background-color: #00d6bd;
+	box-shadow: 0px 8px 15px rgba(16, 16, 16, 0.63);
+}
+
+.delete{
+	align-self: flex-start;
+	border-radius: 5px;
+    
+	background: #00a2ff;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	padding: 10px 25px;
+	box-shadow: 0px 2px 0px   #236983;
+	cursor: pointer;
+    transition: all .25s ease-in-out;
+	transition-property: background-color, box-shadow;
+}
+
+.delete:hover{
+	background-color: #00d6bd;
+	box-shadow: 0px 8px 15px rgba(16, 16, 16, 0.63);
+}
+
+.a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.color{
+    color: red;
+}

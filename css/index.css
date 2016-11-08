@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import './reset.css';
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+    color: gold;
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.underline {
+  margin: 15px;
+  border-width: 0 0 5px;
+  border-style: solid;
+  border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill stretch;
+}
+
+body {
+    background-image: url("../images/city.jpg");
+    background-size: 2000px;
+    font: 12px Lucida sans, Arial, Helvetica, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+a {
+	color: #2A679F;
+}
+
+.add_review_btn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+	width: 4rem;
+	height: 4rem;
+	font-size: 2rem;
+	border-radius: 50%;
+	background-color: #00a2ff;
+	color:white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 5px 8px rgba(16, 16, 16, 0.63);
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+	transition-property: background-color, box-shadow;
+    font-family: '';
+}
+.add_review_btn:hover{
+	background-color: #00d6bd;
+	box-shadow: 0px 8px 15px rgba(16, 16, 16, 0.63);
+}
+
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    
+	background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+	border-color: #dedede #bababa #aaa #bababa;
+	border-style: solid;
+	border-width: 1px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+	-moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+	box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+	margin: 20px auto;
+	overflow: hidden;
+	padding: 8px;
+	width: 340px;
+}
+
+.form-wrapper #search {
+	border: 1px solid #CCC;
+	-webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  color: #999;
+	float: left;
+	font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
+	height: 20px;
+	padding: 10px;
+	width: 315px;
+}
+
+#map {
+    flex-wrap: wrap;    
+    width: 80%;
+    height: 400px;
+    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px solid #000;
+}
+
+.review_item{
+	margin-bottom: .5rem;
+	border: #cfcfcf solid 2px;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.66);
+	padding: .8rem;
+	display: flex;
+    width: 50vw;
+}
+
+.reviews {
+	padding: 1.2rem;
+}
+
+.review_thumb{
+	width: 75px;
+	height: 75px;
+	margin-right: 15px;
+}
+
+.review_title {
+	font-family: 'Open Sans Condensed';
+	font-weight: 700;
+	font-size: 1.15rem;
+	margin-bottom: .5rem;
+}
+
+.edit {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    background-size: 2000px;
+}
+.img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
+}
+.img:hover {
+    cursor: pointer;
+}
+.dsc {
+    margin-bottom: .5rem;
+	border: #cfcfcf solid 2px;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.66);
+	padding: .8rem;
+	display: flex;
+    width: 50vw;
+    height: 50vh;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World City Reviews</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/add.css">
+</head>
+<body>
+  <div class='container'>   
+      <h1 class="underline">&nbsp;&nbsp;&nbsp;&nbsp;World City Reviews&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+      <div class="add_review_btn" title="Add your own review">+</div>
+      <div class="form-wrapper">
+          <input type="text" id="search" placeholder="City i want to visit...">
+      </div>
+    <div id="map"></div>
+    <ul class="reviews"></ul> 
+  </div> 
+    
+  <div class='edit'></div>
+  <script src="js/index.js"></script>
+  <script src="js/edit.js"></script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg5_Xh191cjyHkMUo7xVl7F6K3mHdqZN4&callback=initMap&libraries=places" type="text/javascript"></script>   
+    
+</body>
+</html>
